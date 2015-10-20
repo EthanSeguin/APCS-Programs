@@ -9,7 +9,7 @@ public class TweetDecoderC {
       System.out.println("Enter abbreviation from tweet: ");
       origTweet = scnr.nextLine();
 
-   origTweet = origTweet.replace("lol", "laughing out loud");
+   origTweet = origTweet.replace("LOL", "laughing out loud");
    origTweet = origTweet.replace("BFN", "bye for now");
    origTweet=origTweet.replace("FTW", "for the win");    
    origTweet=origTweet.replace("IRL", "in real life");      
