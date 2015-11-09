@@ -2,6 +2,15 @@ import java.util.Scanner;
 import java.util.Random;
 
 public class DiceA {
+    
+    public static void CountRolls(int rollTotal, int[]numX){
+     for (int j = 2; j <= 12; ++j) {
+                    if (rollTotal == j) {
+                        ++numX[j];
+                    }
+                }
+
+    }
     public static void main(String args[]) {
 
         Scanner scnr = new Scanner(System.in);
@@ -27,13 +36,8 @@ public class DiceA {
 
                 // Count number of sixs and sevens
 
-                for (int j = 2; j <= 12; ++j) {
-                    if (rollTotal == j) {
-                        ++numX[j];
-                    }
-                }
-
-
+               //method stuffs go here k den
+CountRolls(rollTotal,numX);
 
                 System.out.println("Roll " + (i + 1) + " is " +
                     rollTotal + " (" + die1 +
